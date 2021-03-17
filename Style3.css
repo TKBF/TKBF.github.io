@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgb(41, 41, 41);
+    font-family:'Montserrat';
+}
+ nav{
+     display: flex;
+     width: 100%;
+     justify-content: space-around;
+     align-items: center;
+     min-height: 8vh;
+     font-family:'Montserrat';
+     background-color: rgb(188, 225, 224);
+     
+ }
+ .logo{
+     font-size: 35px;
+ }
+ .nav_links{
+     display: flex;
+     justify-content: space-around;
+     width: 30%;
+ }
+ .nav_links a{
+     text-decoration: none;
+     font-size: 25px;
+     color: rgb(41, 41, 41);
+ }
+ .nav_links a:hover{
+
+    
+    color: rgb(255, 255, 255);
+}
+ .nav_links li{
+     list-style:none;
+ }
+ .burger{
+     display: none;
+}
+ .burger div {
+     width: 25px;
+     height: 2px;
+     background-color: rgb(41, 41, 41);
+     margin: 4px;
+     transition: all 0.3s ease;
+ }
+ .on{
+    color:rgb(255, 255, 255);
+}
+
+
+.services{
+    
+
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+    
+
+}
+.card{
+    display: flex;
+    
+    
+}
+.A{
+    margin: 20px;
+    background-color: azure;
+    width: 20%;
+    height: 40vh;
+    text-align: center;
+    align-items: center;
+    padding:20px;
+    border-radius: 20px;
+    
+}
+h2{
+    padding: 25px;
+}
+i{
+    font-size: 25px;
+}
+
+ @media screen and (max-width:768px){
+     body{
+         overflow-x: hidden;
+     }
+  
+     .nav_links{
+         position: absolute;
+         right: 0px;
+         height: 92vh;
+         top: 8vh;
+         width: 50%;
+         background-color:rgb(188, 225, 224);
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         transform: translateX(100%);
+         transition: transform 0.5s ease-in;
+        
+     }
+     .burger{
+         display: block;
+         cursor: pointer;
+         
+     }
+     .nav_links li{
+        opacity: 0;
+     }
+     .card{
+         flex-direction: column;
+     }
+     .A{
+         width: 60%;
+     }
+     .services{
+         top:100%;
+         z-index: -1;
+     }
+     
+ }
+ @media screen and (max-width:375px){
+        .A{
+            width: 80%;
+        }
+}
+ .nav-active{
+     transform: translateX(0%);
+     
+ }
+ @keyframes navLinkFade{
+     from{
+         opacity: 0;
+         transform:translateX(50px);
+     }
+     to{
+        opacity: 1;
+        transform:translateX(0px);
+     }
+ }
+ .toggle .line1{
+     transform: rotate(-45deg) translate(-3.5px,4.5px);
+ }
+ .toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-3.5px,-4.5px);
+}

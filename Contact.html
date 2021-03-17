@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nissan</title>
+    <link rel="stylesheet" href="Style4.css">
+    
+</head>
+<body>
+    <nav>
+      <div class="logo">
+        <h4>NISSAN SILVIA</h4>
+        <!--<img src="res/web_midterm/nissan-logo-2020-black.png" alt="">-->
+      </div>
+      <ul class="nav_links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="About.html">About</a></li>
+        
+        <li class="on"><a href="Contact.html">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>    
+
+    <div class="contact">
+        <form action="output.html" method="GET">
+            <div>
+                <p> Firstname </p>
+                 <input type="text" placeholder="First Name" autocomplete="off" class="text"  name="name" >
+            </div>
+            <div>
+                <p> Lastname </p>
+                <input type="text" placeholder="Last Name"class="text" autocomplete="off" name="lname">
+            </div>  
+            <div>
+            <div>
+                <p> Email </p>
+                <input type="email" placeholder="Email" class="text" autocomplete="off"  name="Email">
+            </div> 
+            <div>
+                
+                <p> Problem </p>
+                <textarea placeholder="Problems" class="text" autocomplete="off" name="Problem"  ></textarea>
+            </div> 
+            <div>
+                <p></p>
+            </div>
+        
+
+            
+            <button type="submit">submit<i class="fas fa-sign-in-alt"></i></button>
+            <button type="reset">reset<i class="fas fa-times-circle"></i></button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
